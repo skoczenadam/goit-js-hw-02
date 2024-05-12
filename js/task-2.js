@@ -1,5 +1,7 @@
 function formatMessage(message, maxLength) {
-  if (message.length <= maxLength) return message;
+  if (message.length <= maxLength) {
+    return message;
+  }
   else {
     const shortVersion = message.slice(0, maxLength);
     return `${shortVersion} ...`;
